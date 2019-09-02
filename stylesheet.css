@@ -1,0 +1,114 @@
+* {
+	box-sizing: border-box;
+}
+
+
+
+main {
+	width: 75vw;
+	height: 80vh;
+	display: grid;
+	margin: auto;
+	margin-top: 3em;
+	grid-template-areas: 
+		"header aside"
+		"footer aside";
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 2fr;
+	background-color: black;
+	font-family: consolas, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+header {
+	grid-area: header;
+	grid-column: col 1;
+	grid-row: row 1;
+	background-color: rgba(1, 5, 10, 1);
+	color: white;
+	text-indent: 2px;
+	min-width: 50vw;
+	min-height: 17vh;
+	padding: 2px;
+	font-size: 2em;
+}
+
+aside {
+	grid-area: aside;
+	grid-column: col 2;
+	grid-row: row 1 / span 2;
+	background-color: black;
+	color: white;
+	text-indent: 1px;
+	min-width: 25vw;
+	padding: 2px;
+}
+
+footer {
+	grid-area: footer;
+	grid-column: col 1;
+	grid-row: row 2;
+}
+
+footer {
+	display: grid;
+	width: 50vw;
+	height: 60vh;
+	grid-template-areas: 
+		"a b c d"
+		"e f g h"
+		"i j k l"
+		"m n o p"
+		"r s t u";
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 2px;
+	padding: 1px;
+}
+
+button {
+	background-color: #333333;
+	color: white;
+	border: 1px solid #333333;
+}
+
+button .isPressed {
+	background-color: #993300;
+}
+
+#seven { grid-area: a; } #eight { grid-area: b; } #nine { grid-area: c; } #multiply { grid-area: d; background-color: #ff6600; }
+
+#four { grid-area: e; } #five { grid-area: f; } #six { grid-area: g; } #minus { grid-area: h; background-color: #ff6600; }
+
+#one { grid-area: i; } #two { grid-area: j; } #three { grid-area: k; } #plus { grid-area: l; background-color: #ff6600; }
+
+#decimalPoint {grid-area: m; }  #zero {grid-area: n; } #divide { grid-area: p; background-color: #ff6600; }
+
+#delete { grid-area: r; } #clear { grid-area: s; } #percentage { grid-area: t; } #equal { grid-area: u; background-color: #ff6600; }
+
+
+body {
+	background-color: #cccccc;
+}
+
+p {
+	font-size: 1em;
+	font-weight: bolder;
+}
+
+input {
+	color: white;
+	font-family: consolas, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: black;
+	border: none;
+	font-size: 18px;
+	min-width: 48vw;
+	font-weight: bolder;
+}
+
+#store {
+	font-size: 0.5em;
+	color: #cccccc;
+	font-family: 'arial';
+}
